@@ -15,6 +15,8 @@ struct Node {
 };
 
 Node * create_node(unsigned int);
+void add_node(Node *);
+void separate_node(Node *);
 void destroy_node(Node *);
 
 #endif
