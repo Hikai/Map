@@ -2,9 +2,9 @@
 
 Node * root = nullptr;
 
-Node * create_node(unsigned int data)
+Node * Node::create_node(unsigned int data)
 {
-	Node * node = (Node *)malloc(sizeof(Node *));
+	Node * node = new Node;
 	node->data = data;
 	node->before = nullptr;
 	node->after = nullptr;
@@ -14,7 +14,7 @@ Node * create_node(unsigned int data)
 	return node;
 }
 
-void add_node(Node * node)
+void Node::add_node(Node * node)
 {
 	if (root == nullptr) {
 		root = node;
@@ -32,7 +32,7 @@ void add_node(Node * node)
 	}
 }
 
-void separate_node(Node * node)
+void Node::separate_node(Node * node)
 {
 	node->before = nullptr;
 	node->after = nullptr;
@@ -42,7 +42,7 @@ void separate_node(Node * node)
 	destroy_node(node);
 }
 
-void destroy_node(Node * node)
+void Node::destroy_node(Node * node)
 {
-	free(node);
+	delete node;
 }
