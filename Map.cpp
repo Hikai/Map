@@ -1,8 +1,6 @@
 #include "Map.h"
 
-Node * root = nullptr;
-
-Node * Node::create_node(unsigned int data)
+Node * Store::create_node(unsigned int data)
 {
 	Node * node = new Node;
 	node->data = data;
@@ -14,7 +12,7 @@ Node * Node::create_node(unsigned int data)
 	return node;
 }
 
-void Node::add_node(Node * node)
+void Store::add_node(Node * node)
 {
 	if (root == nullptr) {
 		root = node;
@@ -32,7 +30,7 @@ void Node::add_node(Node * node)
 	}
 }
 
-void Node::separate_node(Node * node)
+void Store::separate_node(Node * node)
 {
 	node->before = nullptr;
 	node->after = nullptr;
@@ -42,7 +40,7 @@ void Node::separate_node(Node * node)
 	destroy_node(node);
 }
 
-void Node::destroy_node(Node * node)
+void Store::destroy_node(Node * node)
 {
 	delete node;
 }

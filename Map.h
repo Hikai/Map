@@ -2,23 +2,36 @@
 #ifndef _MAP_H_
 #define _MAP_H_
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 class Node {
-private :
+public :
 	unsigned int data;
 	Node * before;
 	Node * after;
 	Node * parent;
 	Node * left;
 	Node * right;
-public :
 	Node()
 	{
 
 	}
 	~Node()
+	{
+
+	}
+};
+
+class Store {
+public :
+	Node * root = nullptr;
+	Store()
+	{
+
+	}
+	~Store()
 	{
 
 	}
