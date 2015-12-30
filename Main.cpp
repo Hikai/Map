@@ -18,5 +18,6 @@ int main()
 	store_node->separate_node(node3);
 	store_node->separate_node(node2);
 	store_node->separate_node(node1);
+	delete store_node;
 	return 0;
 }
