@@ -35,6 +35,7 @@ public :
 
 	}
 	Node * create_node(unsigned int);
+	Node * get_root_node();
 	void add_node(Node *);
 	void separate_node(Node *);
 	void destroy_node(Node *);
