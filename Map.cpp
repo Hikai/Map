@@ -12,6 +12,12 @@ Node * Store::create_node(unsigned int data)
 	return node;
 }
 
+Node * Store::get_root_node()
+{
+	return root;
+}
+}
+
 void Store::add_node(Node * node)
 {
 	if (root == nullptr) {
