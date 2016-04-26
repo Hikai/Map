@@ -17,6 +17,12 @@ Node * Store::get_root_node()
 	return root;
 }
 
+void Store::set_root_node(Node * node)
+{
+	root = node;
+}
+}
+
 void Store::add_node(Node * node)
 {
 	if (root == nullptr) {
