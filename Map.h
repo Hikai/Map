@@ -28,7 +28,8 @@ class Store {
 public :
 	Store()
 	{
-
+		root = nullptr;
+	}
 	}
 	~Store()
 	{
@@ -41,7 +42,7 @@ public :
 	void separate_node(Node *);
 	void destroy_node(Node *);
 private :
-	Node * root = nullptr;
+	Node * root;
 };
 
 #endif
