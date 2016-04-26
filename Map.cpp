@@ -16,7 +16,6 @@ Node * Store::get_root_node()
 {
 	return root;
 }
-}
 
 void Store::add_node(Node * node)
 {
