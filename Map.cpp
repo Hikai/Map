@@ -25,8 +25,8 @@ void Store::set_root_node(Node * node)
 
 void Store::add_node(Node * node)
 {
-	if (root == nullptr) {
-		root = node;
+	if (get_root_node() == nullptr) {
+		set_root_node(node);
 	}
 	else {
 		root->after = node;
