@@ -29,11 +29,12 @@ void Store::add_node(Node * node)
 	}
 	else {
 		root->after = node;
-		if (root->left == nullptr) {
-			root->left = node;
+		// get_root_node()->after = node;
+		if (root->left == nullptr) { // get_root_node()->left == nullptr
+			root->left = node; // get_root_node()->left = node;
 		}
 		else {
-			root->right = node;
+			root->right = node; // get_root_node()->right = node;
 		}
 		node->before = root;
 		node->parent = root;
