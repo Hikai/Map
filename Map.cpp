@@ -21,7 +21,6 @@ void Store::set_root_node(Node * node)
 {
 	root = node;
 }
-}
 
 void Store::add_node(Node * node)
 {
