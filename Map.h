@@ -7,13 +7,14 @@
 using namespace std;
 
 class Node {
-public :
+private :
 	unsigned int data;
 	Node * before;
 	Node * after;
 	Node * parent;
 	Node * left;
 	Node * right;
+public :
 	Node()
 	{
 
