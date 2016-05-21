@@ -9,20 +9,23 @@ using namespace std;
 class Node {
 private :
 	unsigned int data;
-	Node * before;
 	Node * after;
+	Node * before;
 	Node * parent;
 	Node * left;
 	Node * right;
 public :
 	Node()
 	{
-
 	}
 	~Node()
 	{
-
 	}
+	Node * get_node_before(void);
+	Node * get_node_after(void);
+	Node * get_node_parent(void);
+	Node * get_node_left(void);
+	Node * get_node_right(void);
 };
 
 class Store {
