@@ -26,6 +26,12 @@ public :
 	Node * get_node_parent(void);
 	Node * get_node_left(void);
 	Node * get_node_right(void);
+	void set_node_data(unsigned int);
+	void set_node_before(Node *);
+	void set_node_after(Node *);
+	void set_node_parent(Node *);
+	void set_node_left(Node *);
+	void set_node_right(Node *);
 };
 
 class Store {
