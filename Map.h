@@ -54,7 +54,7 @@ public :
 	}
 	~Store()
 	{
-
+		root = nullptr;
 	}
 	Node * create_node(unsigned int);
 	Node * get_root_node();
