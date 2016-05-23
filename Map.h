@@ -25,6 +25,12 @@ public :
 	}
 	~Node()
 	{
+		set_node_data(NULL);
+		set_node_after(nullptr);
+		set_node_before(nullptr);
+		set_node_parent(nullptr);
+		set_node_left(nullptr);
+		set_node_right(nullptr);
 	}
 	Node * get_node_after(void);
 	Node * get_node_before(void);
