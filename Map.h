@@ -17,6 +17,11 @@ private :
 public :
 	Node()
 	{
+		set_node_after(nullptr);
+		set_node_before(nullptr);
+		set_node_parent(nullptr);
+		set_node_left(nullptr);
+		set_node_right(nullptr);
 	}
 	~Node()
 	{
