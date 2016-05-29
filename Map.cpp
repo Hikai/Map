@@ -3,12 +3,12 @@
 Node * Store::create_node(unsigned int data)
 {
 	Node * node = new Node;
-	node->data = data;
-	node->before = nullptr;
-	node->after = nullptr;
-	node->parent = nullptr;
-	node->left = nullptr;
-	node->right = nullptr;
+	node->set_node_data(data);
+	node->set_node_after(nullptr);
+	node->set_node_before(nullptr);
+	node->set_node_parent(nullptr);
+	node->set_node_left(nullptr);
+	node->set_node_right(nullptr);
 	return node;
 }
 
