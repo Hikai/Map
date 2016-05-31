@@ -103,11 +103,12 @@ void Store::add_node(Node * node)
 
 void Store::separate_node(Node * node)
 {
-	node->before = nullptr;
-	node->after = nullptr;
-	node->parent = nullptr;
-	node->left = nullptr;
-	node->right = nullptr;
+	node->set_node_data(NULL);
+	node->set_node_after(nullptr);
+	node->set_node_before(nullptr);
+	node->set_node_parent(nullptr);
+	node->set_node_left(nullptr);
+	node->set_node_right(nullptr);
 	destroy_node(node);
 }
 
