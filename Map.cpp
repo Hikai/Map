@@ -1,5 +1,35 @@
 #include "Map.h"
 
+unsigned int Node::get_node_data(void)
+{
+	return data;
+}
+
+Node * Node::get_node_after(void)
+{
+	return after;
+}
+
+Node * Node::get_node_before(void)
+{
+	return before;
+}
+
+Node * Node::get_node_parent(void)
+{
+	return parent;
+}
+
+Node * Node::get_node_left(void)
+{
+	return left;
+}
+
+Node * Node::get_node_right(void)
+{
+	return right;
+}
+
 Node * Store::create_node(unsigned int data)
 {
 	Node * node = new Node;
