@@ -32,6 +32,7 @@ public :
 		set_node_left(nullptr);
 		set_node_right(nullptr);
 	}
+	unsigned int get_node_data(void);
 	Node * get_node_after(void);
 	Node * get_node_before(void);
 	Node * get_node_parent(void);
