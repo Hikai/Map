@@ -30,6 +30,36 @@ Node * Node::get_node_right(void)
 	return right;
 }
 
+void Node::set_node_data(unsigned int data)
+{
+	this->data = data;
+}
+
+void Node::set_node_after(Node * node_after)
+{
+	this->after = node_after;
+}
+
+void Node::set_node_before(Node * node_before)
+{
+	this->before = node_before;
+}
+
+void Node::set_node_parent(Node * node_parent)
+{
+	this->parent = node_parent;
+}
+
+void Node::set_node_left(Node * node_left)
+{
+	this->left = node_left;
+}
+
+void Node::set_node_right(Node * node_right)
+{
+	this->right = node_right;
+}
+
 Node * Store::create_node(unsigned int data)
 {
 	Node * node = new Node;
