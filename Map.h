@@ -4,11 +4,13 @@
 
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
+
+template <typename T>
 class Node {
 private :
-	unsigned int data;
+	T data;
 	Node * after;
 	Node * before;
 	Node * parent;
@@ -32,13 +34,13 @@ public :
 		set_node_left(nullptr);
 		set_node_right(nullptr);
 	}
-	unsigned int get_node_data(void);
+	T get_node_data(void);
 	Node * get_node_after(void);
 	Node * get_node_before(void);
 	Node * get_node_parent(void);
 	Node * get_node_left(void);
 	Node * get_node_right(void);
-	void set_node_data(unsigned int);
+	void set_node_data(T);
 	void set_node_after(Node *);
 	void set_node_before(Node *);
 	void set_node_parent(Node *);
@@ -46,6 +48,7 @@ public :
 	void set_node_right(Node *);
 };
 
+template <typename T>
 class Store {
 public :
 	Store()
@@ -57,7 +60,7 @@ public :
 	{
 		root = nullptr;
 	}
-	Node * create_node(unsigned int);
+	Node * create_node(T);
 	Node * get_root_node();
 	void set_root_node(Node *);
 	void add_node(Node *);
