@@ -1,6 +1,7 @@
 #include "Map.h"
 
-unsigned int Node::get_node_data(void)
+template <typename T>
+T Node::get_node_data(void)
 {
 	return data;
 }
@@ -30,7 +31,8 @@ Node * Node::get_node_right(void)
 	return right;
 }
 
-void Node::set_node_data(unsigned int data)
+template <typename T>
+void Node::set_node_data(T data)
 {
 	this->data = data;
 }
