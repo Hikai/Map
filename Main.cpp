@@ -14,6 +14,8 @@ int main()
 	store_node->add_node(node1);
 	store_node->add_node(node2);
 	store_node->add_node(node3);
+	store_node->add_node(node3);
+	store_node->add_node(node3);
 	cout << store_node->root->data << endl;
 	cout << store_node->root->left->data << endl;
 	cout << store_node->root->right->data << endl;
