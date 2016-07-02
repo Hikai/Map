@@ -2,13 +2,15 @@
 
 int main()
 {
-	Node * node1;
-	Node * node2;
-	Node * node3;
+	Node * node1, * node2, * node3, * node4, * node5, * node6;
 	Store * store_node = new Store;
+	Store * store_node2 = new Store;
 	node1 = store_node->create_node(123);
 	node2 = store_node->create_node(321);
 	node3 = store_node->create_node(132);
+	node4 = store_node2->create_node('a');
+	node5 = store_node2->create_node('b');
+	node6 = store_node2->create_node('c');
 	store_node->add_node(node1);
 	store_node->add_node(node2);
 	store_node->add_node(node3);
