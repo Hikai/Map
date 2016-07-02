@@ -14,14 +14,16 @@ int main()
 	store_node->add_node(node1);
 	store_node->add_node(node2);
 	store_node->add_node(node3);
-	store_node->add_node(node3);
-	store_node->add_node(node3);
+	store_node->add_node(node4);
+	store_node->add_node(node5);
+	store_node->add_node(node6);
 	cout << store_node->root->data << endl;
 	cout << store_node->root->left->data << endl;
 	cout << store_node->root->right->data << endl;
 	store_node->separate_node(node3);
 	store_node->separate_node(node2);
 	store_node->separate_node(node1);
+	delete store_node2;
 	delete store_node;
 	return 0;
 }
