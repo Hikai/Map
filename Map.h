@@ -76,26 +76,31 @@ T Node::get_node_data(void)
 	return data;
 }
 
+template <typename T>
 Node * Node::get_node_after(void)
 {
 	return after;
 }
 
+template <typename T>
 Node * Node::get_node_before(void)
 {
 	return before;
 }
 
+template <typename T>
 Node * Node::get_node_parent(void)
 {
 	return parent;
 }
 
+template <typename T>
 Node * Node::get_node_left(void)
 {
 	return left;
 }
 
+template <typename T>
 Node * Node::get_node_right(void)
 {
 	return right;
@@ -107,31 +112,37 @@ void Node::set_node_data(T data)
 	this->data = data;
 }
 
+template <typename T>
 void Node::set_node_after(Node * node_after)
 {
 	this->after = node_after;
 }
 
+template <typename T>
 void Node::set_node_before(Node * node_before)
 {
 	this->before = node_before;
 }
 
+template <typename T>
 void Node::set_node_parent(Node * node_parent)
 {
 	this->parent = node_parent;
 }
 
+template <typename T>
 void Node::set_node_left(Node * node_left)
 {
 	this->left = node_left;
 }
 
+template <typename T>
 void Node::set_node_right(Node * node_right)
 {
 	this->right = node_right;
 }
 
+template <typename T>
 Node * Store::create_node(unsigned int data)
 {
 	Node * node = new Node;
@@ -144,16 +155,19 @@ Node * Store::create_node(unsigned int data)
 	return node;
 }
 
+template <typename T>
 Node * Store::get_root_node()
 {
 	return root;
 }
 
+template <typename T>
 void Store::set_root_node(Node * node)
 {
 	root = node;
 }
 
+template <typename T>
 void Store::add_node(Node * node)
 {
 	if (get_root_node() == nullptr) {
@@ -173,6 +187,7 @@ void Store::add_node(Node * node)
 	}
 }
 
+template <typename T>
 void Store::separate_node(Node * node)
 {
 	node->set_node_data(NULL);
@@ -184,6 +199,7 @@ void Store::separate_node(Node * node)
 	destroy_node(node);
 }
 
+template <typename T>
 void Store::destroy_node(Node * node)
 {
 	delete node;
